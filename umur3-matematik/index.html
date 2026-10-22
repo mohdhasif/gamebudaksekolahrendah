@@ -2,63 +2,16 @@
 <html lang="ms">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#ffd54f">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+  <meta name="theme-color" content="#ffe082">
   <title>Jom Kira!</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- Menu utama -->
-  <section id="home" class="screen active">
-    <header class="home-head">
-      <h1>Jom Kira! <span class="wave">🎈</span></h1>
-      <p class="sub">Matematik untuk adik umur 3 tahun</p>
-    </header>
-    <div id="menu" class="menu"></div>
-    <details class="parent">
-      <summary>👩‍🏫 Nota untuk ibu bapa &amp; cikgu</summary>
-      <p>Setiap permainan ada 5 pusingan dan mengajar satu kemahiran sahaja
-        (ikut bidang <em>Perkembangan Awal Matematik dan Pemikiran Logik</em>, Kurikulum PERMATA Negara):</p>
-      <ul>
-        <li><b>Kira Buah</b>: membilang objek 1–5, satu sebutan untuk satu objek</li>
-        <li><b>Padan Bentuk</b>: memadankan bulat, segi empat, segi tiga, bintang</li>
-        <li><b>Asing Warna</b>: mengelas ikut satu ciri (warna)</li>
-        <li><b>Besar &amp; Kecil</b>: membanding saiz</li>
-        <li><b>Sambung Corak</b>: corak AB (cabaran untuk yang hampir 4 tahun)</li>
-      </ul>
-      <p>Tiada markah kalah. Jawapan salah cuma dapat “Cuba lagi”. Duduk bersama anak,
-        sebut semula perkataan yang didengar, dan hadkan 10–15 minit satu sesi.</p>
-    </details>
-  </section>
-
-  <!-- Skrin permainan -->
-  <section id="play" class="screen">
-    <div class="topbar">
-      <button id="btn-home" class="round-btn" aria-label="Menu">🏠</button>
-      <div id="stars" class="stars" aria-label="Bintang"></div>
-      <button id="btn-say" class="round-btn" aria-label="Dengar semula">🔊</button>
-    </div>
-    <div id="prompt" class="prompt"></div>
-    <div id="stage" class="stage"></div>
-  </section>
-
-  <!-- Skrin tahniah -->
-  <section id="win" class="screen">
-    <div class="win-box">
-      <div class="trophy">🏆</div>
-      <h2>Hebat!</h2>
-      <div class="win-stars">⭐⭐⭐⭐⭐</div>
-      <div class="win-actions">
-        <button id="btn-again" class="big-btn">🔁 Main lagi</button>
-        <button id="btn-menu" class="big-btn alt">🏠 Menu</button>
-      </div>
-    </div>
-  </section>
-
-  <div id="fx" aria-hidden="true"></div>
+  <div id="game"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/phaser/3.80.1/phaser.min.js"></script>
   <script src="game.js"></script>
 </body>
 </html>
